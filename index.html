@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rome Trip</title>
+  </head>
+  <style>
+    * {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0px 16px;
+    }
+
+    .row div {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 0px 8px;
+    }
+
+    .map-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .key {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0px;
+      list-style: none;
+    }
+
+    .key li {
+      margin: 4px 0px;
+      margin-left: 8px;
+    }
+
+    .key-div {
+      width: 10px;
+      height: 5px;
+      background-color: green;
+      padding: 2px 10px;
+      margin-right: 4px;
+      border: 1px solid;
+    }
+
+    .key-div-orange {
+      background-color: orange;
+    }
+
+    .key-div-blue {
+      background-color: rgb(75, 159, 255);
+    }
+
+    .key-div-yellow {
+      background-color: rgb(255, 255, 75);
+    }
+  </style>
+  <body>
+    <h1>Rome Trip</h1>
+    <div class="map-container">
+      <iframe
+        id="map"
+        src="https://www.google.com/maps/d/embed?mid=10y3xxVsyQjVhxGqiS8uSYec6f08NhWbk&hl=en&ehbc=2E312F"
+        width="640"
+        height="480"
+      ></iframe>
+    </div>
+    <hr />
+    <p>Key:</p>
+    <ul class="key">
+      <li><span class="key-div"></span> Free</li>
+      <li>
+        <span class="key-div key-div-orange"></span> Free / Angels & Demons
+        Sites
+      </li>
+      <li>
+        <span class="key-div key-div-blue"></span> Other Top Sites (some free)
+      </li>
+      <li>
+        <span class="key-div key-div-yellow"></span> Star: Kelly & Kevin's
+        Essentials (some are free)
+      </li>
+    </ul>
+    <div class="row">
+      <div>
+        <h2>Free Things</h2>
+        <ul>
+          <li>Pantheon</li>
+          <li>Spanish Steps</li>
+          <li>Trevi Fountain</li>
+          <li>Piazza Navona</li>
+          <li>Campo de Fiore (lunchtime)</li>
+        </ul>
+      </div>
+      <div>
+        <h2>All close to each other (can do in one day)</h2>
+        <ul>
+          <li>Boca de Veritas</li>
+          <li>Colosseum</li>
+          <li>Trastevere</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Vatican</h2>
+        <ul>
+          <li>Vatican gardens</li>
+          <li>Vatican museums (21 euros)</li>
+          <li>Pieta</li>
+          <li>Sistine chapel (paid, part of Vatican Museum)</li>
+          <li>
+            Saint Peters Basilica Hours: 7-6pm (dress modestly)
+            <a href="https://www.pnac.org/visitorsoffice/popular-rome-tours/"
+              >Free Tour</a
+            >
+            (free unless you climb the dome)
+          </li>
+          <li>Castel Sant'Angelo (14 euros)</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Other</h2>
+        <ul>
+          <li>Colosseum - one ticket</li>
+          <li>Palatine Hill (part of Colosseum ticket)</li>
+          <li>Forum (part of Colosseum ticket)</li>
+          <li>Catacombs (8 euros)</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
